@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+.gen{
+    height: 40px;
+    width: 80px;
+    text-align: center;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background: linear-gradient(to left,rgba(13, 13, 231, 0.695),rgba(40, 183, 215, 0.791) );
+    color: white;
+}
+.main{
+    margin-top: 10px;
+    padding: 6px;
+    margin-left: 40px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    height: fit-content;
+    width: fit-content;
+    background-color: rgba(121, 213, 213, 0.668);
+    color: rgba(86, 52, 210, 0.548);
+}

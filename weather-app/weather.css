@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container_no_1 {
+    /* background: linear-gradient(to right,rgba(145, 92, 178, 0.853), rgba(67, 183, 229, 0.514)); */
+    background: url(wallpaperflare.com_wallpaper\ \(7\).jpg) ;
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.main{
+    height: 500px;
+    width: 500px;
+    position:absolute;
+    margin-left: 33%;
+    margin-top: 20px;
+    outline: none; 
+    border-radius: 30px;
+    text-align: center;
+    background: transparent ;
+    /* background-color: rgba(39, 38, 38, 0.5); */
+    box-shadow: inset -5px -5px  9px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(20px);
+
+}
+.search{
+    position: absolute;
+    top: 60px;
+    margin-left: 150px;
+    /* border-radius: 30px;
+    padding: 10px; */
+    
+}
+.search #place{
+    border-radius: 30px;
+    padding:8px;
+    border: none;
+    outline: none;
+
+
+}
+.search .btn{
+    height: fit-content;
+    width:fit-content;
+    border-radius: 30px;
+    padding: 6px;
+    border: none;
+    outline: none;
+    margin-left: 4px;
+}
+.search .btn:hover{
+    cursor: pointer;
+    color:rgba(32, 38, 40, 0.63)
+}
+.hea{
+
+    position: relative;
+    top: 160px;
+    margin-left: 0px;
+    height: 60px;    
+}
+.hea h2{
+    color: rgb(155, 111, 199);
+}
+.hea h3{
+    color: rgb(71, 66, 67);
+}
+.hea h4{
+    color: rgb(13, 36, 244);
+    text-decoration: underline;
+
+}

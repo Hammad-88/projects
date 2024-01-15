@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="cal.css">
+</head>
+<body>
+    <h1 id="heading">calculator</h1>
+    <div id="cal">
+        
+        <input type="text" id="display" disabled>
+    <button   onclick="clearDisplay()"   class="similar" id="clear">c</button>
+        <div id="main">
+            <button   onclick="addtodisplay('9')"  class="second" id="9">9</button>
+            <button   onclick="addtodisplay('8')"  class="second" id="8">8</button>
+            <button   onclick="addtodisplay('7')"  class="second" id="7">7</button>
+            <button   onclick="addtodisplay('+')"   class="similar" id="add">+</button>
+            <button   onclick="addtodisplay('6')"  class="second" id="6">6</button>
+            <button   onclick="addtodisplay('5')"  class="second" id="5">5</button>
+            <button   onclick="addtodisplay('4')"  class="second" id="4">4</button>
+            <button   onclick="addtodisplay('-')"   class="similar" id="minus">-</button>
+            <button   onclick="addtodisplay('3')"  class="second" id="3">3</button>
+            <button   onclick="addtodisplay('2')"  class="second" id="2">2</button>
+            <button   onclick="addtodisplay('1')"  class="second" id="1">1</button>
+            <button   onclick="addtodisplay('*')"   class="similar" id="multi">*</button>
+            <button   onclick="addtodisplay('0')"  class="second" id="zero">0</button>
+            <button   onclick="addtodisplay('.')"  class="second" id="dot">.</button>
+            <button   onclick="addtodisplay('/')"  class="second" id="divide">/</button>
+            <button   onclick="result('=')"    class="similar" id="result">=</button>
+
+
+        </div>
+    </div>
+    <script src="cal.js">
+        
+let display = document.querySelector('#display')
+console.log(display)
+function addtodisplay(){
+    display.value += value 
+}
+function clear() {
+    display.value = ''
+}
+function result() {
+    try {
+        display.value = eval(display.value)
+    } catch (error) {
+        console.log(error)
+    }
+}
+    </script>
+</body>
+</html>

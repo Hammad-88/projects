@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg,rgba(0, 0, 255, 0.514),rgba(255, 0, 0, 0.545));
+}
+.todo{
+    height: 300px;
+    width: 500px;
+    max-width: 610px;
+    overflow: hidden;
+    border-radius: 30px;
+    background-color: white;
+    margin-top: 30px;
+    margin-left: 25%;
+    position: absolute;
+}
+.todo h1{
+    margin-left:  160px;
+    font-style:italic;
+}
+.onerow{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #edeef0;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+}
+.onerow #input-box{
+    padding: 8px;
+    flex: 1;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.onerow button{
+    border: none;
+    outline: none;
+    padding:8px ;
+    border-radius: 30px;
+    background-color: orange;
+    color: white;
+    padding: 16px 30px;
+    cursor: pointer;
+}
+ul li {
+    cursor: pointer;
+    list-style: none;
+    position: relative;
+    padding: 12px 8px 12px 50px;
+ }
+ 
+ ul li::before{ 
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    left: 8px;
+} 
+
+ul li.itemno1{
+text-decoration: line-through; 
+} 
+ ul li.itemno1::before{
+    text-decoration: line-through;
+} 
+ul li span{
+    position: absolute;
+    right: 4px;
+    height: 22px;
+    width: 22px;
+    top: 18px;
+    border-radius: 20px;
+    text-align: center;
+}
+ul li span:hover{
+    background-color: #babec6;
+}
